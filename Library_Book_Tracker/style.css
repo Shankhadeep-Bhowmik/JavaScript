@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #dbdde0;
+  color: #333;
+}
+
+/* Header */
+header {
+  background-color: #385e83ec;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Main section */
+.container {
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+  justify-content: center;
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+/* Form box */
+.book-form {
+  flex: 1;
+  background-color: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Form fields */
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Save button */
+.book-form button {
+  width: 100%;
+  padding: 12px;
+  background-color: #2980b9;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.book-form button:hover {
+  background-color: #1f6693;
+}
+
+/* Book list box */
+.book-list {
+  flex: 1;
+  min-height: 300px;
+  background-color: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Individual book items */
+#bookList {
+  list-style: none;
+  max-height: 350px;     /* list stops growing here, then scrolls */
+  overflow-y: auto;      /* scrollbar appears only when needed */
+  padding-right: 8px;    /* keeps the scrollbar away from the rows */
+}
+
+#bookList li {
+  display: flex;                  /* text left, button right */
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;                      /* the distance between text and button */
+  padding: 12px 15px;
+  margin-bottom: 10px;
+  background-color: #f0f4f8;
+  border-left: 4px solid #2980b9;
+  border-radius: 4px;
+}
+
+/* Book text: takes the free space and wraps long words */
+#bookList li span {
+  flex: 1;
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+/* Issue / Return button */
+#bookList li button {
+  flex-shrink: 0;            /* button never gets squeezed */
+  padding: 8px 18px;
+  background-color: #2980b9;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+#bookList li button:hover {
+  background-color: #1f6693;
+}
+
+/* Responsive design for mobile */
+@media (max-width: 600px) {
+  .container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .book-form,
+  .book-list {
+    width: 100%;
+  }
+}

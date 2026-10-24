@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #dbdde0;
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Form card */
+#signupForm {
+  width: 100%;
+  max-width: 400px;
+  background-color: white;
+  padding: 30px 25px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Labels and inputs */
+#signupForm label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+#signupForm input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+#signupForm input:focus {
+  outline: none;
+  border-color: #2980b9;
+}
+
+/* Space between each field (replaces the <br> look) */
+#signupForm br {
+  display: none;
+}
+
+#signupForm input {
+  margin-bottom: 20px;
+}
+
+/* Sign Up button */
+#signupForm button {
+  width: 100%;
+  padding: 12px;
+  background-color: #2980b9;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#signupForm button:hover {
+  background-color: #1f6693;
+}
+
+/* Message area (add <p id="message"></p> in your HTML) */
+#message {
+  margin-top: 15px;
+  padding: 10px 12px;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+#message:empty {
+  display: none;
+}
+
+#message.error {
+  background-color: #fdecea;
+  color: #c0392b;
+  border-left: 4px solid #c0392b;
+}
+
+#message.success {
+  background-color: #eafaf1;
+  color: #1e8449;
+  border-left: 4px solid #1e8449;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="style.css"
+      rel="stylesheet"
+    />
+    <title>Bank Checker</title>
+  </head>
+  <body>
+    <header>
+      <h1>Bank Checker</h1>
+    </header>
+    <main class="container">
+      <!-- I will create 2 sections here -->
+       <section class="userForm">
+        <!-- Here I will create a form in which I will take username, amount, pin and two buttons (Deposit and Withdraw) -->
+         <form>
+          <label for="username">Username (BLOCK LETTERS):</label>
+          <input type="text" id="username" name="username" required />
+          <label for="amount">Amount:</label>
+          <input type="number" id="amount" name="amount" required />
+          <label for="pin">PIN:</label>
+          <input type="password" id="pin" name="pin" required />
+          <button type="button" id="depositBtn">Deposit</button>
+          <button type="button" id="withdrawBtn">Withdraw</button>
+         </form>
+       </section>
+       <section class="result">
+        <!-- Here I will create a div in which I will show the result of the transaction -->
+         <p id="usernameResult"></p>
+         <p id="amountResult"></p>
+         <p id="transactionMessage"></p>
+       </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

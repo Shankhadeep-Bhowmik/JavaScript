@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="style.css"
+      rel="stylesheet"
+    />
+    <title>Library Book Tracker</title>
+  </head>
+  <body>
+    <header>
+      <h1>Library Book Tracker</h1>
+    </header>
+    <main>
+      <section class="container">
+        <form class="book-form">
+          <!-- In form I want to add two things; Book name and Author -->
+          <div class="form-group">
+            <label for="bookName">Book Name:</label>
+            <input type="text" id="bookName" name="bookName" required />
+          </div>
+          <div class="form-group">
+            <label for="author">Author:</label>
+            <input type="text" id="author" name="author" required />
+          </div>
+          <button id="saveButton">SAVE</button>
+        </form>
+        <!-- I want to create a box where I can see list of books -->
+
+         <div class="book-list">
+          <ul id="bookList"></ul>
+         </div>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

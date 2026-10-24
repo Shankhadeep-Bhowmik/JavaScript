@@ -1,0 +1,12 @@
+let arr = ["Apple","Banana","Cherry"];
+console.log(arr);
+console.log(arr[0]);
+console.log(arr[1]);
+arr[2] = "Orange";
+console.log(arr);
+arr[1] = "Pineapple";
+console.log(arr);
+arr[2] = "Mango";
+console.log(arr);
+arr[0] = "Math";
+console.log(arr);
